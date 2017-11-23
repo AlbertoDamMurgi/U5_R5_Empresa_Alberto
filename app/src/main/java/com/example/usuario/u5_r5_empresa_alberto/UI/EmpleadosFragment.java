@@ -1,4 +1,6 @@
 package com.example.usuario.u5_r5_empresa_alberto.UI;
+import com.example.usuario.u5_r5_empresa_alberto.Empresa.basedatos.Bd;
+import com.example.usuario.u5_r5_empresa_alberto.R;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -16,12 +18,20 @@ public class EmpleadosFragment extends Fragment {
     public EmpleadosFragment() {
     }
 
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
 
+        View aux = inflater.inflate(R.layout.activity_empresa,container,false);
+
+
+
 
 
     }
+
+
 }

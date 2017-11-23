@@ -20,21 +20,21 @@ public class Bd {
 
 
 
-    public  ArrayList<Empleado> getEmpleados() {
+    public  static  ArrayList<Empleado> getEmpleados() {
         return empleados;
     }
 
-    public  ArrayList<Jefe> getJefes() {
+    public static ArrayList<Jefe> getJefes() {
         return jefes;
     }
 
-    public void addEmpleado(Empleado empleado){
+    public static void addEmpleado(Empleado empleado){
 
         empleados.add(empleado);
 
     }
 
-    public  void addJefe(Jefe jefe){
+    public static void addJefe(Jefe jefe){
 
         jefes.add(jefe);
 
