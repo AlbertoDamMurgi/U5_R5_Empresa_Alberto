@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -30,22 +31,28 @@ public class EmpleadosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
 
-
-        View aux = inflater.inflate(R.layout.lista,container,false);
-
+        View aux=container;
 
 
-        EmpleadosAdapter adapter = new EmpleadosAdapter(getActivity(),Bd.getEmpleados());
-
-        ListView lista = (ListView) aux.findViewById(R.id.lista);
-
-        lista.setAdapter(adapter);
 
 
-        return aux;
 
+            aux = inflater.inflate(R.layout.lista, container, false);
+
+            EmpleadosAdapter adapter = new EmpleadosAdapter(getActivity(), Bd.getEmpleados());
+
+
+
+            ListView lista = (ListView) aux.findViewById(R.id.lista);
+
+            lista.setAdapter(adapter);
+
+            return aux;
+
+
+        }
 
     }
 
 
-}
+

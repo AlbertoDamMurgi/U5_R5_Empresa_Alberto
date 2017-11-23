@@ -9,7 +9,7 @@
         android:id="@+id/tv_dni_emp"
         android:layout_width="0dp"
         android:layout_height="24dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textAlignment="viewEnd"
@@ -22,7 +22,7 @@
         android:id="@+id/tv_apellidos_emp"
         android:layout_width="0dp"
         android:layout_height="24dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:text="TextView"
         android:textAlignment="textEnd"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView"
@@ -32,7 +32,7 @@
         android:id="@+id/tv_nombre_emp"
         android:layout_width="0dp"
         android:layout_height="24dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textAlignment="textEnd"
@@ -43,7 +43,7 @@
         android:id="@+id/tv_puesto_emp"
         android:layout_width="0dp"
         android:layout_height="24dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textAlignment="textEnd"
@@ -54,7 +54,7 @@
         android:id="@+id/tv_funcion_emp"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textAlignment="viewEnd"
@@ -62,26 +62,13 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_puesto_emp" />
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/gristransparente"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_funcion_emp" />
-
-    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Apellidos:"
-        app:layout_constraintEnd_toStartOf="@+id/tv_apellidos_emp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/tv_dni_emp" />
 
     <TextView
@@ -101,7 +88,7 @@
         app:layout_constraintStart_toStartOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_etiquetafuncion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Funcion:"
@@ -117,4 +104,24 @@
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_dni_emp"
         app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <Button
+        android:id="@+id/btn_addtojefe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="añadir"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_etiquetafuncion" />
 </android.support.constraint.ConstraintLayout>
