@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.example.usuario.u5_r5_empresa_alberto.Empresa.Empleado;
+import com.example.usuario.u5_r5_empresa_alberto.Empresa.basedatos.Bd;
 import com.example.usuario.u5_r5_empresa_alberto.R;
 
 import java.util.ArrayList;
@@ -31,6 +32,8 @@ public class EmpleadosAdapter extends ArrayAdapter<Empleado> {
 
 
 
+
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -39,6 +42,8 @@ public class EmpleadosAdapter extends ArrayAdapter<Empleado> {
         EmpleadoHolder holder;
 
         if (aux == null) {
+
+
 
             aux = LayoutInflater.from(context).inflate(R.layout.celda_empleado,parent,false);
 
@@ -55,7 +60,7 @@ public class EmpleadosAdapter extends ArrayAdapter<Empleado> {
 
         holder = (EmpleadoHolder) aux.getTag();
 
-        holder.dni.setText(datos.get(position).dni);
+        holder.dni.setText("DNI: "+datos.get(position).dni);
         holder.apellidos.setText(datos.get(position).apellidos);
         holder.nombre.setText(datos.get(position).nombre);
         holder.puesto.setText(datos.get(position).puesto);

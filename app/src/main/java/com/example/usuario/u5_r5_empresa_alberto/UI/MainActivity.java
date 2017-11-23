@@ -1,5 +1,7 @@
 package com.example.usuario.u5_r5_empresa_alberto.UI;
 
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -17,6 +19,16 @@ public class MainActivity extends AppCompatActivity {
 
         rellenarDatos();
 
+
+        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+
+        EmpresaPageAdapter adapter = new EmpresaPageAdapter(getApplicationContext(),getSupportFragmentManager());
+
+        pager.setAdapter(adapter);
+
+        TabLayout layout = (TabLayout) findViewById(R.id.tab_layout);
+
+        layout.setupWithViewPager(pager);
 
 
 
@@ -42,4 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 }
