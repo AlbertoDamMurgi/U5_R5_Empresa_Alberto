@@ -60,7 +60,7 @@ public class EmpleadosAdapter extends ArrayAdapter<Empleado> {
 
         holder = (EmpleadoHolder) aux.getTag();
 
-        holder.dni.setText("DNI: "+datos.get(position).dni);
+        holder.dni.setText(datos.get(position).dni);
         holder.apellidos.setText(datos.get(position).apellidos);
         holder.nombre.setText(datos.get(position).nombre);
         holder.puesto.setText(datos.get(position).puesto);
