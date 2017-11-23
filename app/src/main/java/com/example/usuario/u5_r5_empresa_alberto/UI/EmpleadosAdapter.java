@@ -70,7 +70,7 @@ public class EmpleadosAdapter extends ArrayAdapter<Empleado> {
         holder.nombre.setText(datos.get(position).nombre);
         holder.puesto.setText(datos.get(position).puesto);
         holder.funcion.setText(datos.get(position).funcion);
-        //holder.add.setVisibility(View.VISIBLE);
+        holder.add.setVisibility(View.VISIBLE);
         holder.add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

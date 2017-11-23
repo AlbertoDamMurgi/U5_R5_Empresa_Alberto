@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         Bd.addJefe(new Jefe("1543338","jefe5","gokin",new ArrayList<Empleado>(),"inspeccion"));
         Bd.addJefe(new Jefe("3141231","jefe6","main",new ArrayList<Empleado>(),"seo"));
         Bd.addJefe(new Jefe("1212312","jefe7","cuba",new ArrayList<Empleado>(),"inspeccion"));
-        Bd.getJefes().get(1).addEmpleado(Bd.getEmpleados().get(1));
+
 
     }
 

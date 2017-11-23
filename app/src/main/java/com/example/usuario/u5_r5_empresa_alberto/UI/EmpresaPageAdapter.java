@@ -34,6 +34,8 @@ public class EmpresaPageAdapter extends FragmentPagerAdapter {
             case 2:
                 return new InsertarPersonaFragment();
 
+            case 3:
+                return new InsertarjefeFragment();
 
 
         }
@@ -44,7 +46,7 @@ public class EmpresaPageAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
 
@@ -59,6 +61,8 @@ public class EmpresaPageAdapter extends FragmentPagerAdapter {
                 return "Ver jefes("+Bd.getJefes().size()+")";
             case 2:
                 return "Insertar Empleado";
+            case 3:
+                return "Insertar Jefe";
         }
 
         return null;

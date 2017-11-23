@@ -38,7 +38,8 @@ public class JefeFragment extends Fragment {
 
             View vista = inflater.inflate(R.layout.celda_empleado,container,false);
 
-           final Button boton =(Button) vista.findViewById(R.id.btn_addtojefe);
+          // final Button boton =(Button) vista.findViewById(R.id.btn_addtojefe);
+          //  boton.setVisibility(View.VISIBLE);
 
             final Button volver =(Button) aux.findViewById(R.id.volver);
 
@@ -58,7 +59,7 @@ public class JefeFragment extends Fragment {
 
                         Toast.makeText(getActivity(),"añade empleados a ese jefe",Toast.LENGTH_LONG).show();
                         EmpleadosAdapter adapter = new EmpleadosAdapter(getActivity(), Bd.getEmpleados());
-                        boton.setVisibility(View.VISIBLE);
+
                         lista.setAdapter(adapter);
                         volver.setVisibility(View.VISIBLE);
                         volver.setOnClickListener(new View.OnClickListener() {
